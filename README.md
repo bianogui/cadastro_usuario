@@ -47,5 +47,6 @@ flutter run
 
 ## Resultado
 
-<!-- Coloque aqui o print do app funcionando -->
-![Print do app](docs/print.png)
+| Tela inicial | Validação com erros | Cadastro com sucesso |
+|:---:|:---:|:---:|
+| ![Tela inicial](docs/01-tela-inicial.png) | ![Validação com erros](docs/02-validacao-erros.png) | ![Cadastro com sucesso](docs/03-cadastro-sucesso.png) |
