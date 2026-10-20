@@ -45,7 +45,6 @@ class _CadastroPageState extends State<CadastroPage> {
   bool _ocultarSenha = true;
   bool _ocultarConfirmacao = true;
 
-  // Validação de e-mail mais robusta (desafio): usuario@dominio.ext
   static final _emailRegex = RegExp(r'^[\w.+-]+@[\w-]+(\.[\w-]+)*\.[a-zA-Z]{2,}$');
 
   @override
@@ -58,8 +57,6 @@ class _CadastroPageState extends State<CadastroPage> {
     _confirmarSenhaController.dispose();
     super.dispose();
   }
-
-  // ---------- Validators ----------
 
   String? _validarNome(String? value) {
     if (value == null || value.trim().isEmpty) {
@@ -127,8 +124,6 @@ class _CadastroPageState extends State<CadastroPage> {
     return null;
   }
 
-  // ---------- Ação do botão ----------
-
   void _cadastrar() {
     FocusScope.of(context).unfocus();
     final messenger = ScaffoldMessenger.of(context);
@@ -165,8 +160,6 @@ class _CadastroPageState extends State<CadastroPage> {
       );
     }
   }
-
-  // ---------- UI ----------
 
   @override
   Widget build(BuildContext context) {
